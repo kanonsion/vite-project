@@ -1,0 +1,11 @@
+__external-libraries/**
+src/static/*
+src/components/common/neplayer/assets/nep.min.js
+src/components/common/neplayer/assets/neplayer.min.js
+dist/*
+src/entries/homepage/*
+src/entries/pc_workbench/*
+src/**/iconfont/*
+src/**/iconfont_all/*
+
+!.*
