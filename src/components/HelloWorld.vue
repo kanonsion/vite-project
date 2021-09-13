@@ -9,6 +9,7 @@ const count = ref(0)
 <template>
   <h1>{{ msg }}</h1>
   <svg-icon iconClass="bug"/>
+  <router-view></router-view>
   <p>
     Recommended IDE setup:
     <a href="https://code.visualstudio.com/" target="_blank">VSCode</a>
