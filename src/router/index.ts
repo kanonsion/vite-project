@@ -2,18 +2,33 @@ import {createRouter, createWebHistory} from 'vue-router'
 import type {App} from "vue";
 
 import a from '@/page/a.vue'
+import Container from './../components/container/src/index.vue'
+import ChooseIcon from './../page/choose-icon.vue'
 
 const router = createRouter({
     history: createWebHistory(),
     routes: [
-        {path: '/', component: a},
+        {
+            path: '/',
+            component: Container,
+            children: [
+                {
+                    path: '/a',
+                    component: a
+                },
+                {
+                    path: '/chooseIcon',
+                    component: ChooseIcon
+                }
+            ]
+        },
     ]
 })
 
-export function resetRoute():void{
+export function resetRoute(): void {
     router.getRoutes().forEach(item => {
         const {name} = item
-        if (name){
+        if (name) {
             router.hasRoute(name) && router.removeRoute(name)
         }
     })

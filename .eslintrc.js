@@ -1,6 +1,7 @@
 module.exports = {
   root: true,
   // 预定义一些全局变量
+  parser: 'vue-eslint-parser',
   env: {
     browser: true
   },
@@ -41,6 +42,7 @@ module.exports = {
     // 'elfin/ref-prefix': ['error'],
     'no-console': ['warn', { allow: ['info', 'warn', 'error'] }],
     'no-debugger': 'warn',
+    'vue/no-v-model-argument': 'off',
     'vue/script-indent': ['error', 4, {
       baseIndent: 1,
       switchCase: 1
