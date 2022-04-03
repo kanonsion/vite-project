@@ -41,7 +41,10 @@ module.exports = {
     // 'elfin/ref-prefix': ['error'],
     'no-console': ['warn', { allow: ['info', 'warn', 'error'] }],
     'no-debugger': 'warn',
-    'vue/script-indent': ['error', 4, { baseIndent: 1, switchCase: 1 }],
+    'vue/script-indent': ['error', 4, {
+      baseIndent: 1,
+      switchCase: 1
+    }],
     'vue/html-indent': ['error', 4, { baseIndent: 1 }],
     'vue/html-self-closing': [
       'error',

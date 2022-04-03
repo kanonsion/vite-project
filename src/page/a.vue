@@ -1,11 +1,11 @@
 <template>
-    <div class="aaaaaaaaaaa">21112</div>
+    <div>
+        <div class="aaaaaaaaaaa">21112</div>
+        <el-button>222</el-button>
+    </div>
 </template>
 
-<script>
-    export default {
-        name: 'a'
-    }
+<script setup lang="ts">
 </script>
 
 <style scoped>
