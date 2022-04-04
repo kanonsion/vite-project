@@ -4,6 +4,7 @@ import type {App} from "vue";
 import a from '@/page/a.vue'
 import Container from './../components/container/src/index.vue'
 import ChooseIcon from './../page/choose-icon.vue'
+import ChooseArea from './../page/choose-area.vue'
 
 const router = createRouter({
     history: createWebHistory(),
@@ -19,6 +20,10 @@ const router = createRouter({
                 {
                     path: '/chooseIcon',
                     component: ChooseIcon
+                },
+                {
+                    path: '/chooseArea',
+                    component: ChooseArea
                 }
             ]
         },

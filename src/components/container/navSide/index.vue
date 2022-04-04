@@ -5,11 +5,15 @@
         :collapse="isCollapse">
         <el-menu-item index="1">
             <el-icon-menu></el-icon-menu>
-            <template #title>首页</template>
+            <template #title>
+                首页
+            </template>
         </el-menu-item>
         <el-menu-item index="2">
             <el-icon-menu></el-icon-menu>
-            <template #title>图标选择器</template>
+            <template #title>
+                图标选择器
+            </template>
         </el-menu-item>
     </el-menu>
 </template>
@@ -21,9 +25,9 @@
 </script>
 
 <script setup lang="ts">
-  const props = defineProps<{
-    isCollapse: boolean
-  }>()
+    const props = defineProps<{
+        isCollapse: boolean
+    }>()
 </script>
 
 <style scoped>

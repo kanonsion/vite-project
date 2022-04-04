@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts" setup>
-    import IconSelect from '../components/iconSelect/index.vue'
+    import IconSelect from '../components/iconSelect/src/index.vue'
     import { ref } from 'vue'
 
     const isVisible = ref(false)
