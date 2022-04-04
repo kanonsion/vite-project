@@ -1,7 +1,7 @@
 module.exports = {
   root: true,
   // 预定义一些全局变量
-  parser: 'vue-eslint-parser',
+  // parser: 'vue-eslint-parser',
   env: {
     browser: true
   },
@@ -111,16 +111,16 @@ module.exports = {
         ]
       }
     ],
-    'vue/max-attributes-per-line': [
-      'error',
-      {
-        singleline: 2,
-        multiline: {
-          max: 1,
-          allowFirstLine: false
-        }
-      }
-    ],
+    // 'vue/max-attributes-per-line': [
+    //   'error',
+    //   {
+    //     singleline: 2,
+    //     multiline: {
+    //       max: 1,
+    //       allowFirstLine: false
+    //     }
+    //   }
+    // ],
     'vue/html-closing-bracket-spacing': [
       'error',
       {
