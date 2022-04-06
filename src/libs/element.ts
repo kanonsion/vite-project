@@ -47,6 +47,7 @@ import {
     ElMenu,
     ElMenuItem,
     ElMenuItemGroup,
+    ElSubMenu,
     ElOption,
     ElOptionGroup,
     ElPageHeader,
@@ -164,7 +165,8 @@ const components = [
     ElTooltip,
     ElTransfer,
     ElTree,
-    ElUpload
+    ElUpload,
+    ElSubMenu
 ]
 
 const plugins = [ElInfiniteScroll, ElLoading, ElMessage, ElMessageBox, ElNotification]

@@ -1,21 +1,10 @@
 <template>
-    <el-menu
-        defaultActive="2"
-        class="el-menu-vertical"
-        :collapse="isCollapse">
-        <el-menu-item index="1">
-            <el-icon-menu></el-icon-menu>
-            <template #title>
-                首页
-            </template>
-        </el-menu-item>
-        <el-menu-item index="2">
-            <el-icon-menu></el-icon-menu>
-            <template #title>
-                图标选择器
-            </template>
-        </el-menu-item>
-    </el-menu>
+    <menu-tsx
+        :data="data"
+        defaultActive="/"
+        :collapse="isCollapse"
+        :router="true">
+    </menu-tsx>
 </template>
 
 <script lang="ts">
@@ -25,9 +14,40 @@
 </script>
 
 <script setup lang="ts">
+    import {ref} from "vue"
+    import {MenuItem} from './../../menu/src/type'
+
     const props = defineProps<{
         isCollapse: boolean
     }>()
+
+    const data = ref<MenuItem[]>([
+        {
+            icon: 'ColdDrink',
+            name: '首页',
+            index: '/'
+        },
+        {
+            icon: 'Cpu',
+            name: '图标选择器',
+            index: '/chooseIcon'
+        },
+        {
+            icon: 'Collection',
+            name: '省市区选择',
+            index: '/chooseArea'
+        },
+        {
+            icon: 'Crop',
+            name: '趋势标记',
+            index: '/trendPage'
+        },
+        {
+            icon: 'Menu',
+            name: '导航菜单',
+            index: '/menu'
+        }
+    ])
 </script>
 
 <style scoped>

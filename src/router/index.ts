@@ -6,6 +6,7 @@ import Container from './../components/container/src/index.vue'
 import ChooseIcon from './../page/choose-icon.vue'
 import ChooseArea from './../page/choose-area.vue'
 import TrendPage from './../page/trend-page.vue'
+import Menu from './../page/menu.vue'
 
 const router = createRouter({
     history: createWebHistory(),
@@ -29,6 +30,10 @@ const router = createRouter({
                 {
                     path: '/trendPage',
                     component: TrendPage
+                },
+                {
+                    path: '/menu',
+                    component: Menu
                 }
             ]
         },

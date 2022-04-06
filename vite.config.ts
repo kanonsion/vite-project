@@ -5,6 +5,7 @@ import path = require('path')
 // @ts-ignore
 import VitePluginElementPlus from 'vite-plugin-element-plus'
 import VueSetupExtend from 'vite-plugin-vue-setup-extend'
+import vueJsx from '@vitejs/plugin-vue-jsx'
 
 const resolve = (dir: string) => path.join(__dirname, dir)
 
@@ -13,6 +14,7 @@ export default defineConfig(({mode}) => {
     return {
         plugins: [
             vue(),
+            vueJsx(),
             VueSetupExtend(),
             VitePluginElementPlus({
                 // 如果你需要使用 [component name].scss 源文件，你需要把下面的注释取消掉。
