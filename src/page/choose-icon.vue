@@ -1,13 +1,16 @@
 <template>
     <div>
-        <icon-select v-model:isVisible="isVisible" title="选择图标">
-            <el-button @click="handleClick">选择图标</el-button>
+        <icon-select
+            v-model:isVisible="isVisible"
+            title="选择图标">
+            <el-button @click="handleClick">
+                选择图标
+            </el-button>
         </icon-select>
     </div>
 </template>
 
 <script lang="ts" setup>
-    import IconSelect from '../components/iconSelect/src/index.vue'
     import { ref } from 'vue'
 
     const isVisible = ref(false)

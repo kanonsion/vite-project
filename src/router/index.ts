@@ -1,10 +1,11 @@
 import {createRouter, createWebHistory} from 'vue-router'
-import type {App} from "vue";
+import type {App} from "vue"
 
 import a from '@/page/a.vue'
 import Container from './../components/container/src/index.vue'
 import ChooseIcon from './../page/choose-icon.vue'
 import ChooseArea from './../page/choose-area.vue'
+import TrendPage from './../page/trend-page.vue'
 
 const router = createRouter({
     history: createWebHistory(),
@@ -24,6 +25,10 @@ const router = createRouter({
                 {
                     path: '/chooseArea',
                     component: ChooseArea
+                },
+                {
+                    path: '/trendPage',
+                    component: TrendPage
                 }
             ]
         },
